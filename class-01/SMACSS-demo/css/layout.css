@@ -1,0 +1,39 @@
+body{
+  margin: auto;
+  width: 450px;
+}
+
+div{
+  height: 200px;
+  border: 2px solid black;
+  background: lightgray;
+}
+
+@media only screen and (min-width: 451px) and (max-width: 760px){
+
+  body{
+    margin: auto;
+    width: 760px;
+  }
+
+  div{
+    background: lightblue;
+    float: left;
+    margin: 20px;
+    width: 200px;
+  }
+}
+
+@media only screen and (min-width: 761px){
+  body{
+    width: 960px;
+  }
+
+  div{
+    background: lightcoral;
+    float: left;
+    margin: 10px;
+    width: 300px;
+  }
+}
+
