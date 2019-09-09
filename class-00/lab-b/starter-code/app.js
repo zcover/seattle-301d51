@@ -171,7 +171,7 @@ console.log(joe.greeting());
 
 
 
-Student.courseName = function() {
+Student.courseName = () => {
   return 'This student is enrolled in Code 301.';
 };
 
