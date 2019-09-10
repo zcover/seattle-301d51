@@ -196,8 +196,16 @@ console.log(joe.scopeArrow());
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-// this returns undefined, because we have not saved any instanciation of Student anywhere, so this is undefined.
+
+// running joe through the .scope prototype returns Student{name: "Joe", age:"Schmoe", hometown: 100}
+//because on line 154, we istanciated "Joe" through the Student constructor.  Student.prototype.scope returns a student, and all of its information. To get a console to log as defined, we would need to add to the console log (example: console.log(this.name) would return "Joe")
+
+
 // 2. What is "this" when joe.scopeArrow() is invoked?
-// when using an arrow function, the this reference refers to the entire window itself, so "this" refers to EVERYTHING
+
+// when using an arrow function, the this reference refers to the entire window itself, so "this" refers to EVERYTHING inside of the window
+
+
 // 3. Explain why "this" is different when an arrow function is used.
+
 // as stated in #2, this is different because "this" is not contextualized, like a regular function layout. This is important to note, so that one uses the "old" function format to create Constructors.
